@@ -1,1 +1,1 @@
-# OC_Projet_2
+# booki-starter-pack
