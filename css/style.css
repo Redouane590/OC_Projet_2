@@ -116,8 +116,36 @@ body {
     margin-bottom: 5px;
 }
 
+.header-logo {
+    width: 61.09px;
+    height: 19px;
+    padding: 30px;
+}
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
 
+.navigation {
+   display: flex;
+   list-style: none;
+   
+}
+
+.navigation li {
+    font-size: 16px;
+    justify-content: space-between;
+    /* padding: 0 25px 0 42px; */
+}
+.active {
+    /* padding-top: 16px; */
+    text-decoration: overline 1px var(--main-color);
+}
+nav {
+    padding: 0 50px 0 50px;
+
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
