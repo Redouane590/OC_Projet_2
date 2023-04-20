@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    color: black;
+    
 }
 
 :root {
@@ -16,6 +18,8 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
@@ -133,8 +137,45 @@ footer {
     list-style-type: none;
 }
 
+
+/* Style pour le header  */
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-logo{
+    padding: 30px;       
+}
+.header-logo-img{
+    height: 20px;  
+    width: 60PX; 
+    
+}
+/* menu */
+ul.navigation{
+    display: flex;
+    align-items: center;
+}
+li#hebergements-link, li#activites-link{
+    justify-content: space-between;
+    padding: 0 25px 0 40px;
+}
+
+.header-nav a:hover, .header-nav .active {
+    color: var(--main-color);
+    border-top: 2px solid;
+    padding-top: 14px;
+
 .footer-link ul {
     padding: 0;
+
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
