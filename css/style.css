@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    color: black;
+    
 }
 
 :root {
@@ -16,6 +18,8 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
@@ -116,35 +120,41 @@ body {
     margin-bottom: 5px;
 }
 
-.header-logo {
-    width: 61.09px;
-    height: 19px;
-    padding: 30px;
-}
 
+/* Style pour le header  */
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
 .header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
-
-.navigation {
-   display: flex;
-   list-style: none;
-   
+.header-logo{
+    padding: 30px;       
 }
-
-.navigation li {
-    font-size: 16px;
+.header-logo-img{
+    height: 20px;  
+    width: 60PX; 
+    
+}
+/* menu */
+ul.navigation{
+    display: flex;
+    align-items: center;
+}
+li#hebergements-link, li#activites-link{
     justify-content: space-between;
-    /* padding: 0 25px 0 42px; */
+    padding: 0 25px 0 40px;
 }
-.active {
-    /* padding-top: 16px; */
-    text-decoration: overline 1px var(--main-color);
-}
-nav {
-    padding: 0 50px 0 50px;
 
+.header-nav a:hover, .header-nav .active {
+    color: var(--main-color);
+    border-top: 2px solid;
+    padding-top: 14px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
