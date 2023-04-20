@@ -172,7 +172,7 @@ li#hebergements-link, li#activites-link{
     color: var(--main-color);
     border-top: 2px solid;
     padding-top: 14px;
-
+}
 .footer-link ul {
     padding: 0;
 
