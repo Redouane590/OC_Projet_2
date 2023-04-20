@@ -116,8 +116,26 @@ body {
     margin-bottom: 5px;
 }
 
+/* footer */
+footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.footer-link {
+    flex-grow: 1;
+    padding: 0px 0px 0 20px;
+}
+.footer-link ul li {
+    padding: 8px 0;
+    list-style-type: none;
+}
 
-
+.footer-link ul {
+    padding: 0;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
