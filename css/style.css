@@ -73,8 +73,31 @@ body {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
+.hebergements-cards {
+    
+    
+}
+.hebergements-cards .card {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.hebergements-cards img {
+    
+    height: 136px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* .card {
+    width: 30%;
+    height: 200px;
+} */
 /****** Populaires ***********/
 .populaires {
     width: 32%;
