@@ -73,12 +73,15 @@ body {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .hebergements-cards {
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* justify-content: space-between; */
+    margin:  30px 0;
     
 }
 .hebergements-cards .card {
@@ -87,6 +90,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    width: 29%;
 }
 .hebergements-cards img {
     
@@ -143,6 +147,30 @@ body {
     margin-bottom: 5px;
 }
 
+/****** Populaires ***********/
+
+.activites {
+    /* background-color: #D9D9D9; */
+    padding: 30px;
+}
+.activites-card {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+    margin: 30px 0;
+}
+.activites-card .card {
+    width: 297px;
+    padding: 0;
+}
+.activites-card img {
+    height: 380px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.activites-content {
+    margin: 20px 19px;
+}
 /* footer */
 footer {
     background-color: var(--main-bg-color);
@@ -174,7 +202,7 @@ li {
     width: 100%;
 }
 .header-logo{
-    padding: 30px;       
+    padding: 30px 0;
 }
 .header-logo-img{
     height: 20px;  
@@ -196,6 +224,7 @@ li#hebergements-link, li#activites-link{
     border-top: 2px solid;
     padding-top: 14px;
 }
+
 .footer-link ul {
     padding: 0;
 
@@ -205,29 +234,36 @@ li#hebergements-link, li#activites-link{
 /* Barre de rechercher */
 h1 {
     font-size: 22px;
+    margin: 0 0 8px 0px;
 }
+h1 + p {
+    margin-top: 0;
+}
+
 .loc-dot {
     padding: 16px 18px 14px 18px;
     border-radius: 15px 0 0 15px;
     background-color: var(--main-bg-color);
     border: none;
 }
+
 #input {
     font-size: 18px;
     padding: 13px;
     font-weight: 700;
     border: 1px solid var(--main-bg-color);
-    
 }
+
 h3 {
     margin-bottom: 0;
 }
 form {
     height: 50px;
+    margin-top: 35px;
 }
-.section-recherche {
-    margin-bottom: 20px;
-}
+/* .section-recherche {
+    margin-bottom: 35px;
+} */
 .searchbtn {
     background-color: var(--main-color);
     font-weight: bold;
@@ -242,7 +278,8 @@ form {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    height: 50px;
 }
 
 .filtres button {
@@ -260,6 +297,22 @@ form {
 
 .filtres i {
     padding: 0px 6px 0 12px;
+    
+}
+
+.infos > i {
+    margin-right: 20px;
+}
+
+.filtre-center {
+    align-self: center;
+    
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
