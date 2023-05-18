@@ -284,7 +284,9 @@ form {
 .searchbtn::after {
     content: 'Rechercher';
 }
-
+.fa-magnifying-glass {
+    display: none;
+}
 .filtres {
     display: flex;
     flex-direction: row;
@@ -332,7 +334,8 @@ form {
 .infos {
     display: flex;
     flex-direction: row;
-    margin: 20px 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 b {
@@ -375,7 +378,7 @@ b {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-
+    
     
     .activites-card {
     display: flex;
@@ -410,9 +413,11 @@ b {
         width: 162px;
         height: 50px;
         font-size: 14px;
-        flex: 1 1 162px;
+        
     }
-    
+    .fa-magnifying-glass {
+        display: block;
+    }
     .hebergements-cards {
         flex-direction: column;
         
@@ -452,7 +457,7 @@ b {
     margin: 30px 0;
     }
     section {
-        margin: 85px 0;
+        margin: 35px 0;
     }
     .header {
         flex-direction: column;
@@ -460,9 +465,15 @@ b {
     
     .searchbtn {
         border-radius: 15px 15px 15px 15px;
+        font-size: 16px;
+        margin-left: -12px;
+        padding: 16PX;
+.infossection    }
+    form {
+        width: max-content;
     }
     .searchbtn::after {
-        content: '🔍';
+        content: '';
     }
     /* .header-nav {
         width: 100%;
@@ -472,7 +483,9 @@ b {
         padding-inline-start: 0px;
         
     }
-
+    .infos {
+        margin-top: 85px;
+    }
     .navigation li{
         width: 50%;
         text-align: center;
@@ -495,5 +508,13 @@ b {
     .main-container {
         padding: 0 20px;
     }
+    footer {
+        margin: -20px;
+    }
+}
 
+@media (max-width: 378px) {
+    .infos {
+        margin-top: 215px;;
+    }
 }
