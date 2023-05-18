@@ -203,6 +203,7 @@ li {
 }
 .header-logo{
     padding: 30px 0;
+    text-align: center;
 }
 .header-logo-img{
     height: 20px;  
@@ -213,16 +214,22 @@ li {
 ul.navigation{
     display: flex;
     align-items: center;
+    /* gap: 70px; */
 }
+
 li#hebergements-link, li#activites-link{
     justify-content: space-between;
-    padding: 0 25px 0 40px;
+    
 }
 
 .header-nav a:hover, .header-nav .active {
     color: var(--main-color);
     border-top: 2px solid;
     padding-top: 14px;
+}
+.header-nav a {
+    /* padding: 55px 40px; */
+    margin: 0px 40px;
 }
 
 .footer-link ul {
@@ -272,6 +279,10 @@ form {
     border: 1px solid var(--main-color);
     color: white;
     font-size: 18px;
+    
+}
+.searchbtn::after {
+    content: 'Rechercher';
 }
 
 .filtres {
@@ -279,7 +290,7 @@ form {
     flex-direction: row;
     margin-top: 35px;
     margin-bottom: 20px;
-    
+    height: fit-content;
 }
 .buttons {
     height: 50px;
@@ -314,6 +325,8 @@ form {
 .filtre-center {
     align-self: center;
     margin-right: 15px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .infos {
@@ -321,6 +334,12 @@ form {
     flex-direction: row;
     margin: 20px 0;
 }
+
+b {
+    font-size: 18px;
+}
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -357,6 +376,7 @@ form {
         font-size: 13px;
     }
 
+    
     .activites-card {
     display: flex;
     /* justify-content: space-between; */
@@ -390,7 +410,9 @@ form {
         width: 162px;
         height: 50px;
         font-size: 14px;
+        flex: 1 1 162px;
     }
+    
     .hebergements-cards {
         flex-direction: column;
         
@@ -432,4 +454,46 @@ form {
     section {
         margin: 85px 0;
     }
+    .header {
+        flex-direction: column;
+    }
+    
+    .searchbtn {
+        border-radius: 15px 15px 15px 15px;
+    }
+    .searchbtn::after {
+        content: '🔍';
+    }
+    /* .header-nav {
+        width: 100%;
+    } */
+     ul.navigation{
+        /* width: 100%; */
+        padding-inline-start: 0px;
+        
+    }
+
+    .navigation li{
+        width: 50%;
+        text-align: center;
+        padding: 30px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    .header-nav a:hover, .header-nav .active {
+        
+        
+        border-top: none;
+        padding-top: 0;
+    }
+    .navigation li:hover {
+        width: 50%;
+        text-align: center;
+        padding: 30px 0;
+        border-bottom: 3px solid var(--main-color);
+        
+    }
+    .main-container {
+        padding: 0 20px;
+    }
+
 }
